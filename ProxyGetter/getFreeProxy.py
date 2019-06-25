@@ -186,7 +186,7 @@ class GetFreeProxy(object):
             print(e)
 
     @staticmethod
-    def freeProxy_shengji():
+    def freeProxy_shenji():
         """
             神鸡代理
             http://www.shenjidaili.com/open/
@@ -254,7 +254,7 @@ if __name__ == '__main__':
     # CheckProxy.checkGetProxyFunc(GetFreeProxy.freeProxy_xila)
     # CheckProxy.checkGetProxyFunc(GetFreeProxy.freeProxy_qiyun)
     # CheckProxy.checkGetProxyFunc(GetFreeProxy.freeProxy_nima)
-    # CheckProxy.checkGetProxyFunc(GetFreeProxy.freeProxy_shengji)
+    # CheckProxy.checkGetProxyFunc(GetFreeProxy.freeProxy_shenji)
     # CheckProxy.checkGetProxyFunc(GetFreeProxy.freeProxy_xiaoshu)
     # CheckProxy.checkGetProxyFunc(GetFreeProxy.freeProxy_proxylistplus)
 

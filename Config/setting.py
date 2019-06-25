@@ -40,7 +40,7 @@ PROXY_GETTER = [
     'freeProxy_xila',
     'freeProxy_qiyun',
     'freeProxy_nima',
-    'freeProxy_shengji',
+    'freeProxy_shenji',
     'freeProxy_xiaoshu',
     'freeProxy_proxylistplus',
 ]
