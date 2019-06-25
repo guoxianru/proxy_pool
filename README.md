@@ -44,7 +44,7 @@ SERVER_API = {
 4.上面配置启动后，代理池访问地址为 39.106.189.108:5010
 ```
 
-四、启动
+### 四、启动
 ```shell
 # 如果你的依赖已经安全完成并且具备运行条件,可以直接在Run下运行main.py
 # 到Run目录下:  python main.py
@@ -52,7 +52,7 @@ SERVER_API = {
 # 你也可以分别运行他们,依次到Api下启动ProxyApi.py,Schedule下启动ProxyRefreshSchedule.py和ProxyValidSchedule.py即可.
 ```
 
-五、Docker
+### 五、Docker
 
 1.开发环境 Docker
 ```shell
@@ -68,7 +68,7 @@ pip install docker-compose
 docker-compose -f Docker/docker-compose.yml up -d
 ```
 
-六、使用
+### 六、使用
 
 1.可以通过api访问 39.106.189.108:5010 查看
 ```shell
@@ -107,7 +107,7 @@ def getHtml():
     return None
 ```
 
-七、扩展代理
+### 七、扩展代理
 * 添加一个新的代理获取方法如下:
 
 1.首先在GetFreeProxy类中添加你的获取代理的静态方法， 该方法需要以生成器(yield)形式返回host:ip格式的代理，例如:
