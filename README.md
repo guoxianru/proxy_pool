@@ -17,6 +17,7 @@ pip install -r requirements.txt
 
 ### 三、配置Config/setting.py
 * Config/setting.py 为项目配置文件
+
 ```shell
 1.配置数据库
 DATABASES = {
@@ -44,6 +45,7 @@ SERVER_API = {
 4.上面配置启动后，代理池访问地址为 39.106.189.108:5010
 ```
 
+
 ### 四、启动
 ```shell
 # 如果你的依赖已经安全完成并且具备运行条件,可以直接在Run下运行main.py
@@ -51,6 +53,7 @@ SERVER_API = {
 # 如果运行成功你应该看到有4个main.py进程
 # 你也可以分别运行他们,依次到Api下启动ProxyApi.py,Schedule下启动ProxyRefreshSchedule.py和ProxyValidSchedule.py即可.
 ```
+
 
 ### 五、Docker
 
@@ -60,6 +63,7 @@ SERVER_API = {
 docker build -t proxy_pool .
 docker run -it --rm -v $(pwd):/usr/src/app -p 5010:5010 proxy_pool
 ```
+
 2.生产环境 Docker/docker-compose
 ```shell
 # Workdir proxy_pool
@@ -67,6 +71,7 @@ docker build -t proxy_pool .
 pip install docker-compose
 docker-compose -f docker-compose.yml up -d --build
 ```
+
 
 ### 六、使用
 
@@ -106,6 +111,7 @@ def getHtml():
     delete_proxy(proxy)
     return None
 ```
+
 
 ### 七、扩展代理
 * 添加一个新的代理获取方法如下:
