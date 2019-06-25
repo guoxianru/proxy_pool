@@ -1,7 +1,0 @@
-APScheduler
-werkzeug
-Flask
-requests
-lxml
-pymongo
-redis
