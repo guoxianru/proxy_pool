@@ -48,10 +48,10 @@ SERVER_API = {
 
 ### 四、启动
 ```shell
-# 如果你的依赖已经安全完成并且具备运行条件,可以直接在Run下运行main.py
-# 到Run目录下:  python main.py
-# 如果运行成功你应该看到有4个main.py进程
-# 你也可以分别运行他们,依次到Api下启动ProxyApi.py,Schedule下启动ProxyRefreshSchedule.py和ProxyValidSchedule.py即可.
+如果你的依赖已经安全完成并且具备运行条件,可以直接在Run下运行main.py
+到Run目录下:  python main.py
+如果运行成功你应该看到有4个main.py进程
+你也可以分别运行他们,依次到Api下启动ProxyApi.py,Schedule下启动ProxyRefreshSchedule.py和ProxyValidSchedule.py即可.
 ```
 
 
