@@ -59,8 +59,9 @@ SERVER_API = {
 # Workdir proxy_pool
 docker build -t proxy_pool .
 docker run -it --rm -v $(pwd):/usr/src/app -p 5010:5010 proxy_pool
-
+```
 2.生产环境 Docker/docker-compose
+```shell
 # Workdir proxy_pool
 docker build -t proxy_pool .
 pip install docker-compose
