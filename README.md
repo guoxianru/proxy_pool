@@ -66,9 +66,9 @@ docker run -it --rm -v $(pwd):/usr/src/app -p 5010:5010 proxy_pool
 
 2.生产环境 Docker/docker-compose
 ```shell
-# Workdir proxy_pool
-docker build -t proxy_pool .
-pip install docker-compose
+## Workdir proxy_pool
+# docker build -t proxy_pool .
+# pip install docker-compose
 docker-compose -f docker-compose.yml up -d --build
 ```
 
