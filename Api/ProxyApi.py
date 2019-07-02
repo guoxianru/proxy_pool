@@ -22,12 +22,12 @@ class JsonResponse(Response):
 app.response_class = JsonResponse
 
 api_list = {
-    '使用方法': 'host:port/关键词',
     'delete?proxy=host:port': u'删除一个代理IP',
     'get': u'获取一个代理IP',
     'get_all': u'获取所有代理IP',
     'get_status': u'代理池当前状态',
     'refresh': u'刷新代理池(refresh会有守护程序定时执行，由api直接调用性能较差，不建议使用)',
+    '使用方法': 'host:port/关键词'
 }
 
 

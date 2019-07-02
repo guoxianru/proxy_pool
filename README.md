@@ -77,10 +77,14 @@ docker-compose -f docker-compose.yml up -d --build
 
 1.可以通过api访问 39.106.189.108:5010 查看
 ```shell
-/get	        GET	随机获取一个代理	None
-/get_all	    GET	获取所有代理	None
-/get_status	    GET	查看代理数量	None
-/delete	GET	    删除代理	proxy=host:ip
+{
+'delete?proxy=host:port': u'删除一个代理IP',
+'get': u'获取一个代理IP',
+'get_all': u'获取所有代理IP',
+'get_status': u'代理池当前状态',
+'refresh': u'刷新代理池(refresh会有守护程序定时执行，由api直接调用性能较差，不建议使用)',
+'使用方法': 'host:port/关键词'
+}
 ```
 
 2.爬虫使用
