@@ -1,10 +1,9 @@
 FROM python:3.6
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ Asia/Shanghai
-WORKDIR /usr/src/app
-COPY ./requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
+WORKDIR /srv/proxy_pool
+ADD . /srv/proxy_pool
 EXPOSE 5010
-WORKDIR /usr/src/app/
-CMD [ "python", "Run/main.py" ]
+RUN pip3 install --upgrade pip
+RUN pip3 install -r requirements.txt
+CMD [ "python3", "Run/main.py" ]

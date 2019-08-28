@@ -8,7 +8,7 @@ def testWebRequest():
     :return:
     """
     wr = WebRequest()
-    request_object = wr.get('https://www.tianyancha.com')
+    request_object = wr.get('https://www.baidu.com')
     assert request_object.status_code == 200
 
 
