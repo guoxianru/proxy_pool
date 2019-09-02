@@ -18,15 +18,16 @@ pip install -r requirements.txt
 ### 三、配置Config/setting.py
 * Config/setting.py 为项目配置文件
 
+## 基础配置
 ```shell
 1.配置数据库
 DATABASES = {
     "default": {
         "TYPE": "SSDB",             # 如果使用SSDB或redis数据库，均配置为SSDB
-        "HOST": "39.106.189.108",   # db host(生成环境请配置为公网IP)
-        "PORT": 6379,               # db port
+        "HOST": "host",   # db host(生成环境请配置为公网IP)
+        "PORT": "port",               # db port
         "NAME": "proxy",            # 数据库名称
-        "PASSWORD": ""              # 数据库密码
+        "PASSWORD": "password"              # 数据库密码
     }
 }
 
@@ -46,7 +47,7 @@ SERVER_API = {
 ```
 
 
-### 四、启动
+### 四、运行
 ```shell
 如果你的依赖已经安全完成并且具备运行条件,可以直接在Run下运行main.py
 到Run目录下:  python main.py
@@ -57,18 +58,8 @@ SERVER_API = {
 
 ### 五、Docker
 
-1.开发环境 Docker
+生产环境 Docker/docker-compose
 ```shell
-# Workdir proxy_pool
-docker build -t proxy_pool .
-docker run -it --rm -v $(pwd):/usr/src/app -p 5010:5010 proxy_pool
-```
-
-2.生产环境 Docker/docker-compose
-```shell
-## Workdir proxy_pool
-# docker build -t proxy_pool .
-# pip install docker-compose
 docker-compose -f docker-compose.yml up -d --build
 ```
 
