@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  #  proxy池容器
+
   proxy_pool:
     container_name: proxy_pool
     build: .
