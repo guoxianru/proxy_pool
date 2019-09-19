@@ -24,23 +24,23 @@ pip install -r requirements.txt
 DATABASES = {
     "default": {
         "TYPE": "SSDB",             # 如果使用SSDB或redis数据库，均配置为SSDB
-        "HOST": "host",   # db host(生成环境请配置为公网IP)
-        "PORT": "port",               # db port
+        "HOST": "host",             # db host(生成环境请配置为公网IP)
+        "PORT": "port",             # db port
         "NAME": "proxy",            # 数据库名称
-        "PASSWORD": "password"              # 数据库密码
+        "PASSWORD": "password"      # 数据库密码
     }
 }
 
 2.配置 ProxyGetter
 PROXY_GETTER = [
-    "freeProxyFirst",      # 启用的代理抓取函数名，在 ProxyGetter/getFreeProxy.py 扩展
+    "freeProxyFirst",               # 启用的代理抓取函数名，在 ProxyGetter/getFreeProxy.py 扩展
     ....
 ]
 
 3.配置 API 服务
 SERVER_API = {
-    "HOST": "0.0.0.0",  # 监听ip, 0.0.0.0 监听所有IP
-    "PORT": 5010        # 监听端口
+    "HOST": "0.0.0.0",              # 监听ip, 0.0.0.0 监听所有IP
+    "PORT": 5010                    # 监听端口
 }
 
 4.上面配置启动后，代理池访问地址为 39.106.189.108:5010
