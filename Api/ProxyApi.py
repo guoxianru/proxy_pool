@@ -73,30 +73,14 @@ def refresh():
 @app.route('/user_agent/')
 def user_agent():
     user_agent_list = [
-        # 谷歌浏览器
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36',
-        # safari 5.1 – Windows
-        'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50'
-        # 搜狗浏览器 1.x
-        'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SE 2.X MetaSr 1.0; SE 2.X MetaSr 1.0; .NET CLR 2.0.50727; SE 2.X MetaSr 1.0)',
-        # UC浏览器
-        'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4094.1 Safari/537.36',
-        # 微软 Edge 浏览器
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586',
-        # 360浏览器
-        'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; 360SE)',
-        # IE 9.0
-        'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0',
-        # Firefox 4.0.1 – Windows
-        'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1',
-        # Opera 11.11 – Windows
-        'Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11',
-        # 傲游（Maxthon）
-        'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Maxthon 2.0)',
-        # 腾讯TT
-        'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; TencentTraveler 4.0)',
-        # 世界之窗（The World） 3.x
-        'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; The World)',
+        # IE
+        'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+        # Edge
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362',
+        # Chrome
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+        # Firefox
+        'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0',
     ]
     user_agent_one = random.sample(user_agent_list, 1)[0]
     return user_agent_one
