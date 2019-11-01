@@ -21,7 +21,7 @@ DATABASES = {
     "default": {
         # TYPE SSDB/MONGODB if use redis, only modify the host port, the type should be SSDB
         "TYPE": "SSDB",
-        "HOST": "39.106.189.108",
+        "HOST": "47.94.245.242",
         "PORT": 6379,
         "NAME": "proxy",
         "PASSWORD": "1111"
