@@ -18,6 +18,22 @@ class GetFreeProxy(object):
     """
 
     @staticmethod
+    def payProxy_wuyou():
+        """
+            无忧代理
+            http://www.data5u.com/
+        """
+        try:
+            order = 'c714e62db21d6bfb4867ae6598ff35bb'
+            apiUrl = 'http://api.ip.data5u.com/dynamic/get.html?order=' + order
+            res = requests.get(apiUrl).content.decode()
+            ips = res.split('\n')
+            for ip in ips:
+                yield ip
+        except Exception as e:
+            print(e)
+
+    @staticmethod
     def freeProxy_iphai():
         """
             IP海
