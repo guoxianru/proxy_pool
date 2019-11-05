@@ -32,18 +32,18 @@ DATABASES = {
 # register the proxy getter function
 
 PROXY_GETTER = [
-    'payProxy_wuyou'
-    # 'freeProxy_iphai',
+    # 'payProxy_wuyou'
+    'freeProxy_iphai',
     # 'freeProxy_89',
-    # 'freeProxy_kuai',
-    # 'freeProxy_yun',
-    # 'freeProxy_xici',
-    # 'freeProxy_xila',
-    # 'freeProxy_qiyun',
-    # 'freeProxy_nima',
-    # 'freeProxy_shenji',
-    # 'freeProxy_xiaoshu',
-    # 'freeProxy_proxylistplus',
+    'freeProxy_kuai',
+    'freeProxy_yun',
+    'freeProxy_xici',
+    'freeProxy_xila',
+    'freeProxy_qiyun',
+    'freeProxy_nima',
+    'freeProxy_shenji',
+    'freeProxy_xiaoshu',
+    'freeProxy_proxylistplus',
 ]
 
 # # API config http://127.0.0.1:5010

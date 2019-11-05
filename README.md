@@ -43,7 +43,7 @@ SERVER_API = {
     "PORT": 5010                    # 监听端口
 }
 
-4.上面配置启动后，代理池访问地址为 39.106.189.108:5010
+4.上面配置启动后，代理池访问地址为 47.94.245.242:5010
 ```
 
 
@@ -66,7 +66,7 @@ docker-compose -f docker-compose.yml up -d --build
 
 ### 六、使用
 
-1.可以通过api访问 39.106.189.108:5010 查看
+1.可以通过api访问 47.94.245.242:5010 查看
 ```shell
 {
 'delete?proxy=host:port': u'删除一个代理IP',
@@ -119,7 +119,7 @@ class GetFreeProxy(object):
     def freeProxyCustom():  # 命名不和已有重复即可
         # 通过某网站或者某接口或某数据库获取代理 任意你喜欢的姿势都行
         # 假设你拿到了一个代理列表
-        proxies = ["139.129.166.68:3128", "139.129.166.61:3128", ...]
+        proxies = ["127.0.0.1:8888", "127.0.0.2:8888", ...]
         for proxy in proxies:
             yield proxy
         # 确保每个proxy都是 host:ip正确的格式就行
