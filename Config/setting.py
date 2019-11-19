@@ -23,8 +23,8 @@ DATABASES = {
         "TYPE": "SSDB",
         "HOST": "47.94.245.242",
         "PORT": 6379,
-        "NAME": "",
-        "PASSWORD": ""
+        "NAME": "proxy",
+        "PASSWORD": "1111"
 
     }
 }
