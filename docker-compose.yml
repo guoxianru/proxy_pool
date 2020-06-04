@@ -1,13 +1,10 @@
-version: '2'
+version: "2"
 services:
   proxy_pool:
-    container_name: proxy_pool
+    container_name: "proxy_pool"
     build: .
-    restart: always
     ports:
       - "5010:5010"
-    environment:
-      db_type: SSDB
-      ssdb_host: host.docker.internal
-      ssdb_port: 6379
-      ssdb_password: 1111
+    restart: always
+    network_mode: "host"
+
