@@ -3,7 +3,7 @@
 
 - 借鉴于：https://github.com/jhao104/proxy_pool
 - 2019.06.06 新增11个免费代理源
-- [示例地址](proxypool.addcoder.com)
+- [示例地址](http://proxypool.addcoder.com/)
 
 
 ### 一、下载安装
