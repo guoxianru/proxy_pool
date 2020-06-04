@@ -1,10 +1,13 @@
-version: '3'
-
+version: '2'
 services:
-
   proxy_pool:
     container_name: proxy_pool
     build: .
     restart: always
     ports:
       - "5010:5010"
+    environment:
+      db_type: REDIS
+      db_host: host.docker.internal
+      db_port: 6379
+      db_password: 1111
