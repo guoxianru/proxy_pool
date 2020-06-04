@@ -7,7 +7,7 @@ services:
     ports:
       - "5010:5010"
     environment:
-      db_type: REDIS
+      db_type: SSDB
       db_host: host.docker.internal
       db_port: 6379
       db_password: 1111
